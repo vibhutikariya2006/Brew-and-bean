@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Brew & Bean</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f5eee7;
+
+    color: #2b1a12;
+
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.header {
+
+    background-color: #2b1a12;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-bottom: 5px solid #c58b52;
+
+}
+
+
+.header h1 {
+
+    margin: 0;
+
+    font-size: 42px;
+
+    letter-spacing: 7px;
+
+    text-shadow: 3px 3px 5px black;
+
+}
+
+
+.header p {
+
+    margin-top: 12px;
+
+    letter-spacing: 4px;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero {
+
+    height: 500px;
+
+    padding: 160px 10%;
+
+    text-align: center;
+
+    color: white;
+
+
+    background-image:
+
+        linear-gradient(
+            rgba(40, 20, 10, 0.75),
+            rgba(40, 20, 10, 0.25)
+        ),
+
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlhfkLRvzHc9iPSni-Gxv4HzZaz0tWMNphQzuRGexl6Lj8VK_0XCeQAeUj5CpRMiL4MWxxL11GniLDcr-kjzcGHercq9YtYGjwxPCFB5Y&s=10");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+
+
+.hero h2 {
+
+    font-size: 48px;
+
+    letter-spacing: 3px;
+
+    text-shadow: 3px 3px 6px black;
+
+}
+
+
+.hero p {
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================
+   INTRO
+===================================== */
+
+.intro {
+
+    width: 80%;
+
+    margin: 50px auto;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border: 2px solid #c58b52;
+
+}
+
+
+.intro h2 {
+
+    color: #6b3e26;
+
+    font-size: 30px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.intro p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================
+   MENU
+===================================== */
+
+.menu {
+
+    padding: 60px 5%;
+
+    text-align: center;
+
+    background-color: #ead8c5;
+
+}
+
+
+.menu > h2 {
+
+    font-size: 34px;
+
+    color: #4a2818;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* MENU BOX */
+
+.menu-item {
+
+    width: 28%;
+
+    height: 280px;
+
+    margin: 2%;
+
+    padding: 80px 20px 20px;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    color: white;
+
+    border: 3px solid white;
+
+}
+
+
+/* COFFEE */
+
+.coffee {
+
+    background-image:
+
+        linear-gradient(
+            rgba(50, 20, 5, 0.6),
+            rgba(20, 10, 5, 0.8)
+        ),
+
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlhfkLRvzHc9iPSni-Gxv4HzZaz0tWMNphQzuRGexl6Lj8VK_0XCeQAeUj5CpRMiL4MWxxL11GniLDcr-kjzcGHercq9YtYGjwxPCFB5Y&s=10");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+/* CAPPUCCINO */
+
+.cappuccino {
+
+    background-image:
+
+        linear-gradient(
+            rgba(100, 60, 20, 0.5),
+            rgba(40, 20, 5, 0.8)
+        ),
+
+        url("https://www.nescafe.com/nz/sites/default/files/2023-09/NESCAF%C3%89%20Cappuccino.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+/* DESSERT */
+
+.dessert {
+
+    background-image:
+
+        linear-gradient(
+            rgba(100, 30, 30, 0.4),
+            rgba(30, 10, 10, 0.8)
+        ),
+
+        url("https://www.cakespot.in/public/uploads/product/1761382006-product-570.jpeg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.menu-item h3 {
+
+    font-size: 22px;
+
+    letter-spacing: 2px;
+
+    text-shadow: 2px 2px 4px black;
+
+}
+
+
+.menu-item p {
+
+    line-height: 1.6;
+
+}
+
+
+.price {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+}
+
+
+/* =====================================
+   OFFER
+===================================== */
+
+.offer {
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    color: white;
+
+
+    background-image:
+
+        radial-gradient(
+            circle,
+            #d6a15c 0%,
+            #8b542f 50%,
+            #3b2114 100%
+        );
+
+}
+
+
+.offer h2 {
+
+    font-size: 30px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.offer h3 {
+
+    font-size: 45px;
+
+    text-shadow: 3px 3px 5px #3b2114;
+
+}
+
+
+.offer p {
+
+    font-size: 17px;
+
+}
+
+
+/* =====================================
+   GRADIENT SECTION
+===================================== */
+
+.gradient-section {
+
+    padding: 70px 5%;
+
+    text-align: center;
+
+    background-color: #fffaf5;
+
+}
+
+
+.gradient-section > h2 {
+
+    font-size: 32px;
+
+    color: #4a2818;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* COMMON GRADIENT BOX */
+
+.gradient-box {
+
+    width: 28%;
+
+    height: 230px;
+
+    padding: 60px 20px 20px;
+
+    margin: 2%;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    color: white;
+
+    border: 4px solid #2b1a12;
+
+}
+
+
+/* LINEAR */
+
+.linear {
+
+    background-image:
+
+        linear-gradient(
+            to right,
+            #3b2114 0%,
+            #b87945 50%,
+            #f2c18b 100%
+        );
+
+}
+
+
+/* RADIAL */
+
+.radial {
+
+    background-image:
+
+        radial-gradient(
+            circle,
+            #f5d6a0 0%,
+            #b87945 50%,
+            #3b2114 100%
+        );
+
+}
+
+
+/* CONIC */
+
+.conic {
+
+    background-image:
+
+        conic-gradient(
+            #3b2114 0%,
+            #b87945 25%,
+            #f5d6a0 50%,
+            #8b542f 75%,
+            #3b2114 100%
+        );
+
+}
+
+
+.gradient-box h3 {
+
+    font-size: 25px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.gradient-box p {
+
+    line-height: 1.6;
+
+}
+
+
+/* =====================================
+   WHY US
+===================================== */
+
+.why-us {
+
+    width: 70%;
+
+    margin: 60px auto;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border: 3px solid #6b3e26;
+
+}
+
+
+.why-us h2 {
+
+    font-size: 30px;
+
+    color: #6b3e26;
+
+    letter-spacing: 3px;
+
+}
+
+
+.why-us p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.footer {
+
+    padding: 45px;
+
+    text-align: center;
+
+    color: white;
+
+    background-color: #2b1a12;
+
+}
+
+
+.footer h2 {
+
+    font-size: 28px;
+
+    letter-spacing: 5px;
+
+}
+
+
+.footer p {
+
+    line-height: 1.8;
+
+    color: #dfc8b3;
+
+}
+</style>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <h1>BREW & BEAN</h1>
+
+        <p>
+            COFFEE • DESSERTS • MOMENTS
+        </p>
+
+    </div>
+
+
+    <!-- HERO -->
+
+    <div class="hero">
+
+        <h2>
+            YOUR DAILY CUP OF HAPPINESS
+        </h2>
+
+        <p>
+            Freshly brewed coffee made
+            especially for you.
+        </p>
+
+    </div>
+
+
+    <!-- INTRO -->
+
+    <div class="intro">
+
+        <h2>WELCOME TO BREW & BEAN</h2>
+
+        <p>
+            We believe that great coffee brings
+            people together. Enjoy freshly roasted
+            beans, delicious desserts and a warm
+            atmosphere.
+        </p>
+
+    </div>
+
+
+    <!-- MENU -->
+
+    <div class="menu">
+
+        <h2>OUR SPECIAL MENU</h2>
+
+
+        <div class="menu-item coffee">
+
+            <h3>☕ CLASSIC COFFEE</h3>
+
+            <p>
+                Rich and freshly brewed coffee.
+            </p>
+
+            <p class="price">
+                ₹120
+            </p>
+
+        </div>
+
+
+        <div class="menu-item cappuccino">
+
+            <h3>☕ CAPPUCCINO</h3>
+
+            <p>
+                Smooth espresso with creamy foam.
+            </p>
+
+            <p class="price">
+                ₹160
+            </p>
+
+        </div>
+
+
+        <div class="menu-item dessert">
+
+            <h3>🍰 CHOCOLATE CAKE</h3>
+
+            <p>
+                Soft, rich and delicious chocolate cake.
+            </p>
+
+            <p class="price">
+                ₹180
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- OFFER -->
+
+    <div class="offer">
+
+        <h2>☕ TODAY'S SPECIAL OFFER</h2>
+
+        <h3>
+            BUY 1 COFFEE
+            <br>
+            GET 1 FREE
+        </h3>
+
+        <p>
+            Offer valid for today only.
+        </p>
+
+    </div>
+
+
+    <!-- GRADIENT LAB -->
+
+    <div class="gradient-section">
+
+        <h2>
+            OUR SIGNATURE COLORS
+        </h2>
+
+
+        <div class="gradient-box linear">
+
+            <h3>LINEAR</h3>
+
+            <p>
+                Warm coffee colors flowing
+                from one side to another.
+            </p>
+
+        </div>
+
+
+        <div class="gradient-box radial">
+
+            <h3>RADIAL</h3>
+
+            <p>
+                A warm glow spreading
+                from the center.
+            </p>
+
+        </div>
+
+
+        <div class="gradient-box conic">
+
+            <h3>CONIC</h3>
+
+            <p>
+                Colors rotating around
+                the center.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- WHY US -->
+
+    <div class="why-us">
+
+        <h2>WHY CHOOSE US?</h2>
+
+        <p>
+            ★ Freshly Roasted Beans
+        </p>
+
+        <p>
+            ★ Fresh Desserts Every Day
+        </p>
+
+        <p>
+            ★ Premium Quality
+        </p>
+
+        <p>
+            ★ Comfortable Environment
+        </p>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+        <h2>BREW • SIP • ENJOY</h2>
+
+        <p>
+            Visit us for your perfect cup of coffee.
+        </p>
+
+        <p>
+            © 2026 Brew & Bean
+        </p>
+
+    </div>
+
+
+</body>
+
+</html>
